@@ -9,3 +9,9 @@ involved in just setting up the basics, things like:
 * Specifying dependencies for common libraries, e.g. boost
 
 This repository includes starting points for new projects.
+
+Starting with a fetch `git init` repository, to start with say the C++ basics:
+
+    git remote add basics git@github.com:thinkski/basics.git
+    git fetch basics
+    git read-tree --prefix=/ -u basics/master:cpp/
